@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to the Game</h1>
+    
+    <button onclick="startGame('easy')">Easy</button>
+    <button onclick="startGame('normal')">Normal</button>
+    <button onclick="startGame('hard')">Hard</button>
+
+    <script>
+        function startGame(difficulty) {
+            // You can perform actions based on the selected difficulty
+            // For example, you can redirect to different pages or start a game with the selected difficulty
+            if (difficulty === 'easy') {
+                window.location.href = 'EasyMode.html'; // Change 'easy.html' to the actual filename of your easy difficulty page
+            } else if (difficulty === 'normal') {
+                window.location.href = 'NormalMode.html'; // Change 'normal.html' to the actual filename of your normal difficulty page
+            } else if (difficulty === 'hard') {
+                window.location.href = 'HardMode.html'; // Change 'hard.html' to the actual filename of your hard difficulty page
+            }
+        }
+    </script>
+
+</body>
+</html>
